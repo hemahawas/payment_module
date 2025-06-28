@@ -6,8 +6,27 @@ import 'package:payment_module/core/widgets/custom_button.dart';
 import 'package:payment_module/modules/home/views/widgets/payment_methods.dart';
 import 'package:payment_module/routes/routes.dart';
 
-class HomeBody extends StatelessWidget {
+class HomeBody extends StatefulWidget {
   const HomeBody({super.key});
+
+  @override
+  State<HomeBody> createState() => _HomeBodyState();
+}
+
+class _HomeBodyState extends State<HomeBody> {
+  late ScrollController scrollController;
+
+  @override
+  void initState() {
+    super.initState();
+    scrollController = ScrollController();
+  }
+
+  @override
+  void dispose() {
+    scrollController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +36,7 @@ class HomeBody extends StatelessWidget {
         Expanded(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: PaymentMethods(),
+            child: PaymentMethods(scrollController: scrollController),
           ),
         ),
         Padding(
@@ -26,6 +45,11 @@ class HomeBody extends StatelessWidget {
             text: 'Add New Card',
             isLoading: false,
             onPressed: () {
+              scrollController.animateTo(
+                scrollController.position.minScrollExtent,
+                duration: const Duration(milliseconds: 300),
+                curve: Curves.easeInOut,
+              );
               Get.toNamed(Routes.newCard);
             },
           ),

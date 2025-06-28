@@ -5,7 +5,8 @@ import 'package:payment_module/modules/home/controller/home_contoller.dart';
 import 'package:payment_module/modules/home/views/widgets/payment_method_item.dart';
 
 class PaymentMethods extends StatelessWidget {
-  const PaymentMethods({super.key});
+  const PaymentMethods({super.key, required this.scrollController});
+  final ScrollController scrollController;
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +15,7 @@ class PaymentMethods extends StatelessWidget {
       () =>
           controller.isLoading.value
               ? CustomScrollView(
+                controller: scrollController,
                 slivers: [
                   SliverList.builder(
                     itemCount: controller.cards.length,

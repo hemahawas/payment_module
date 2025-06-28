@@ -17,8 +17,12 @@ class CardRepository {
   }
 
   Future<void> saveCard(CardModel card) async {
-    await firebaseFirestore.collection('cards').add(card.toJson()).then((_) {
-      log('FIREBASE: Card saved successfully');
-    });
+    await firebaseFirestore
+        .collection('cards')
+        .doc(DateTime.now().toString())
+        .set(card.toJson())
+        .then((_) {
+          log('FIREBASE: Card saved successfully');
+        });
   }
 }
