@@ -1,0 +1,15 @@
+<svg width="935" height="561" viewBox="0 0 935 561" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="935" height="561" rx="56" fill="#FAF0E6"/>
+<path d="M0 55C0 24.6243 24.6243 0 55 0H569L289.72 133.511L0 291V55Z" fill="#F4B5A4"/>
+<path d="M0 55C0 24.6243 24.6243 0 55 0H569L289.72 133.511L0 291V55Z" fill="#F4B5A4"/>
+<path d="M627 0H880C910.376 0 935 24.6243 935 55V252.5L786 134.5L627 0Z" fill="#F4B5A4"/>
+<rect x="782.5" y="93.5" width="102" height="21" rx="3.5" stroke="#CC7861" stroke-width="3"/>
+<rect x="770.5" y="389.5" width="115" height="106" rx="9.5" stroke="black"/>
+<path d="M803 427.5C808.247 427.5 812.5 431.753 812.5 437V495.5H780C774.753 495.5 770.5 491.247 770.5 486V427.5H803Z" stroke="black"/>
+<line x1="769.994" y1="451" x2="813.006" y2="451" stroke="black"/>
+<line x1="770" y1="469.5" x2="813.012" y2="469.5" stroke="black"/>
+<line x1="848" y1="496.002" x2="848" y2="388.998" stroke="black"/>
+<line x1="849" y1="441.5" x2="886.121" y2="441.5" stroke="black"/>
+<line x1="848.939" y1="415" x2="886.061" y2="415" stroke="black"/>
+<line x1="848" y1="469.5" x2="885.121" y2="469.5" stroke="black"/>
+</svg>
