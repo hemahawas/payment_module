@@ -1,16 +1,10 @@
-# payment_module
+# Payment_module
+Technical Assesment that provides adding a new card in a preffesional UX.
 
-A new Flutter project.
+## Tools:
+- Flutter
+- GetX
+- Firebase
+- MVVM Archeticture
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![payment](https://github.com/user-attachments/assets/f226a8f6-4b89-4b8e-a1cb-603dd14a0054)
