@@ -1,5 +1,5 @@
 # Payment_module
-Technical Assesment that provides adding a new card in a preffesional UX.
+Technical Assesment that provides adding a new card in a proffesional UX.
 
 ## Tools:
 - Flutter
